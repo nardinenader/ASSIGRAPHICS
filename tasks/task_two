@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget
+{
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context)
+  {
+    return MaterialApp(
+        title: 'TASK TWO',
+          home: Scaffold(
+          backgroundColor: Colors.white70,
+          appBar: AppBar(),
+          body: Container(
+              width: 200,
+              height: 250,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20.0)),
+           child: Column(
+
+             children: [
+               Image.asset("assets/credit.png",height: 100, width: 100,),
+               SizedBox(height: 16.0),
+               Text("Safe Payment, Happy You!", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+               SizedBox(height: 8.0),
+               Text("Create a fresh virtual credit card for all \n your shopping and needs", style: TextStyle(fontSize: 8)),
+              SizedBox(height: 40.0),
+              ElevatedButton(onPressed: () {}, child: Text(">")),
+
+
+             ],
+
+           ),
+          ),
+        )
+    );
+  }
+}
