@@ -1,2 +1,2 @@
-# training_flutter
-codes training flutter 
+# OpenGL assigment Course graphics
+Assigment Graphics
